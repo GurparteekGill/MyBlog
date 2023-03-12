@@ -14,7 +14,7 @@ def home(request):
     blogs= Post.objects.order_by("-timeStamp")[:6]
     print(blogs)
 
-    return render(request,'home/home.html',{'blogs':blogs})
+    return render(request,'home/index.html',{'blogs':blogs})
 
 #def contact2(request):
  #   send_mail(
